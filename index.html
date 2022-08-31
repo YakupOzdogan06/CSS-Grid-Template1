@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        margin: 0;
+        font-size: 16px;
+      }
+
+      .container {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 4fr 2fr;
+        grid-template-rows: 100px 1fr 400px;
+        grid-template-areas: "header header header" "nav main aside" "footer footer footer";
+      }
+
+      header,
+      footer,
+      main,
+      aside,
+      nav {
+        background-color: brown;
+        color: #fff;
+        padding: 15px;
+        border: 1px sandybrown solid;
+      }
+
+      header {
+        /*grid-column: 1 / span 3;*/
+        grid-area: header;
+        text-align: center;
+        padding: 5px;
+      }
+      main {
+        grid-area: main;
+      }
+
+      footer {
+        /*grid-column: 1 / span 3;*/
+        grid-area: footer;
+      }
+
+      nav {
+        grid-area: nav;
+      }
+
+      aside {
+        grid-area: aside;
+      }
+
+      aside ul {
+      }
+
+      main img {
+        background-position: center;
+        width: 1000px;
+      }
+
+      footer img {
+        background-size: cover;
+        background-position: center;
+        height: 380px;
+        width: 1500px;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          grid-template-columns: 1fr;
+          grid-template-rows: 100px 100px auto 230px;
+          grid-template-areas: "header" "nav" "main" "aside" "footer";
+          overflow: auto;
+        }
+
+        header {
+          position: relative;
+        }
+
+        header h1 {
+          position: absolute;
+          left: 0;
+          bottom: 0.6px;
+        }
+
+        nav {
+          position: relative;
+        }
+        nav ul {
+          position: absolute;
+
+          bottom: 0;
+          left: 0;
+        }
+
+        main {
+          display: flex;
+          flex-direction: column;
+        }
+
+        main .ikincidiv {
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header><h1>What Is Happiness?</h1></header>
+      <nav>
+        <ul>
+          <li>What Is Happiness?</li>
+          <li>What Leads to Happiness?</li>
+          <li>Sustainable Happiness Model</li>
+          <li>Actions that Boost Happiness</li>
+        </ul>
+      </nav>
+      <main>
+        <div class="birincidiv">
+          <h3 class="baslık1">Small Definition of Happiness</h3>
+        </div>
+
+        <div class="ikincidiv">
+          <p class="paragraf1">
+            Happiness is something that people seek to find, yet what defines
+            happiness can vary from one person to the next. When most people
+            talk about the true meaning of happiness, they might be talking
+            about how they feel in the present moment or referring to a more
+            general sense of how they feel about life overall. Happiness
+            Definition: Happiness is an emotional state characterized by
+            feelings of joy, satisfaction, contentment, and fulfillment. While
+            happiness has many different definitions, it is often described as
+            involving positive emotions and life satisfaction. Two key
+            components of happiness (or subjective well-being) are: The balance
+            of emotions: Everyone experiences both positive and negative
+            emotions, feelings, and moods. Happiness is generally linked to
+            experiencing more positive feelings than negative ones. Life
+            satisfaction: This relates to how satisfied you feel with different
+            areas of your life including your relationships, work, achievements,
+            and other things that you consider important. Another definition of
+            happiness comes from the ancient philosopher Aristotle, who
+            suggested that happiness is the one human desire, and all other
+            human desires exist as a way to obtain happiness. He believed that
+            there were four levels of happiness: happiness from immediate
+            gratification, from comparison and achievement, from making positive
+            contributions, and from achieving fulfillment.
+          </p>
+        </div>
+
+        <div class="ucuncudiv">
+          <h3 class="baslık2">Signs of Happiness</h3>
+        </div>
+
+        <div class="dorduncudiv">
+          <p class="paragraf2">
+            While perceptions of happiness may be different from one person to
+            the next, there are some key signs that psychologists look for when
+            measuring and assessing happiness. Some key signs of happiness
+            include: Feeling like you are living the life you wanted Going with
+            the flow and a willingness to take life as it comes Feeling that the
+            conditions of your life are good Enjoying positive, healthy
+            relationships with other people Feeling that you have accomplished
+            (or will accomplish) what you want in life Feeling satisfied with
+            your life Feeling positive more than negative Being open to new
+            ideas and experiences Practicing self-care and treating yourself
+            with kindness and compassion Experiencing gratitude Feeling that you
+            are living life with a sense of meaning and purpose Wanting to share
+            your happiness and joy with others One important thing to remember
+            is that happiness isn't a state of constant euphoria. Instead,
+            happiness is an overall sense of experiencing more positive emotions
+            than negative ones. Happy people still feel the whole range of human
+            emotions—anger, frustrastion, boredom, loneliness, and even
+            sadness—from time to time. But even when faced with discomfort, they
+            have an underlying sense of optimism that things will get better,
+            that they can deal with what is happening, and that they will be
+            able to feel happy again.
+          </p>
+        </div>
+
+        <div class="besincidiv">
+          <img
+            src="https://www.calendar.com/wp-content/uploads/2022/07/Chance-on-Happiness-1280x720.jpg"
+            alt="happiness"
+          />
+        </div>
+      </main>
+      <aside>
+        <h3>Synonyms & Antonyms of happiness</h3>
+
+        <ul>
+          <li>Beatitude</li>
+          <li>blessedness</li>
+          <li>bliss</li>
+          <li>blissfulness</li>
+          <li>felicity</li>
+          <li>gladness</li>
+          <li>joy</li>
+          <li>warm fuzzies</li>
+        </ul>
+      </aside>
+      <footer>
+        <img
+          src="https://scdcentre.com/wp-content/uploads/the-psychology-of-happiness.jpg"
+          alt="finally happy"
+        />
+      </footer>
+    </div>
+  </body>
+</html>
